@@ -19,7 +19,7 @@ body{
     margin-right:30px ;
     font-size: 15px;
 }
-.nav button{
+.nav a{
      margin-left: 30px;
      text-decoration: none;
     font-size: 15px;
@@ -28,7 +28,7 @@ body{
     cursor: pointer;
 }
 
-.nav button:hover{
+.nav a:hover{
     color: rgb(167, 13, 167);
 }
 
@@ -275,12 +275,49 @@ form input{
 }
 .searchbar input{
     width: 250px;
-    height: 20px;
+    height: 10px;
     border-radius: 15px;
     border-style: solid;
     border-width: 1px;
-    padding: 5px;
+    padding: 10px;
     margin-right: 20px;
+    font-size: 13px;
+}
+
+.details-container{
+    width: 1120px;
+    height: 680px;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+}
+
+.box{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title i{
+    font-size:20px;
+}
+.date{
+
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 30px;
+}
+
+.date i{
+    color: yellow;
+    font-size: 20px;
 }
 /* pc size */
 @media (min-width:1500px){
@@ -335,4 +372,62 @@ form input{
         top: 10px;
     }
 
+    /* admin css media */
+
+    .sidebar{
+        width: 300px;
+        font-size: 1.2rem;
+    }
+    .sidebar h1{
+        margin-top: 2%;
+    }
+    .wrapper-admin{
+        margin-left: 300px;
+        width: 1500px;
+    }
+    .profile{
+        top: 600px;
+    }
+    .profile-image i{
+        font-size: 75px;
+    }
+
+    .profile-name{
+        width: 200px;
+        left: 90px;
+        bottom: 40px;
+    }
+    .profile-name p,h4{
+        font-size: 1.2rem;
+    }
+    .notes h1{
+        font-size: 1.7rem;
+    }
+    .searchbar input{
+        width: 320px;
+        height: 20px;
+        border-radius: 30px;
+    }
+    .notes{
+
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .details-container{
+       
+        margin-top: 25px;
+        width: 1500px;
+        height: 950px;
+        gap: 20px;
+    }
+
+    .box{
+        border-radius: 20px;
+        padding: 20px;
+        font-size: 1.1em;
+    }
+    .date{
+        top: 90px;
+    }
 }

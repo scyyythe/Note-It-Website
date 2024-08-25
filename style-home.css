@@ -31,7 +31,10 @@ body{
 .nav a:hover{
     color: rgb(167, 13, 167);
 }
-
+.nav a.active{
+    color: rgb(167, 13, 167);
+    text-decoration: underline;
+}
 .header span{
     color: rgb(14, 168, 130);
 }
@@ -82,6 +85,11 @@ body{
     position: relative;
     left: 120px;
     top: 10px;
+
+}
+.btn-sign-in a{
+    text-decoration: none;
+    color: white;
 }
 .btn-sign-in button{
     width: 200px;
@@ -99,6 +107,7 @@ body{
     background-color:rgba(32, 212, 167, 0.911);
     cursor: pointer;
 }
+
 /* sign in css */
 
 .wrapper-form{
@@ -168,6 +177,7 @@ form input{
 }
 .btn-sign a{
     text-decoration: none;
+    color: white;
 }
 .btn-sign button:hover{
     transform: scale(.9);
@@ -200,7 +210,7 @@ form input{
 }
 .sidebar a:hover{
     color: white;
-    background-color: rgba(128, 128, 128, 0.274);
+    background-color: rgba(24, 197, 174, 0.5);
 }
 .sidebar i{
     margin-right: 10px; 
@@ -249,6 +259,7 @@ form input{
 .notes h1{
     text-decoration: underline rgb(15, 167, 129) ; ;
     font-size: 25px;
+  
 }
 .searchbar{
     display: flex;
@@ -261,7 +272,7 @@ form input{
     padding: 20px;
 }
 .searchbar i{
-
+    cursor: pointer;
     margin-right: 10px;
 }
 .searchbar input{
@@ -289,6 +300,10 @@ form input{
     border-width: 1px;
     border-radius: 5px;
     padding: 10px;
+    transition: transform .9s ease;
+}
+.box:hover{
+    transform: scale(.9);
 }
 .title{
     display: flex;
@@ -320,7 +335,7 @@ form input{
     .header{
         font-size: 1.2rem;
     }
-    .nav button{
+    .nav a{
         font-size: 1.2rem;
         margin-left: 50px;
     }

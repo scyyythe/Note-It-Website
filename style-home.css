@@ -7,9 +7,7 @@
     font-family: "Poppins", sans-serif;
     color: black;
 }
-body{
-    /* overflow: hidden; */
-}
+
 .header{
 
     display: flex;
@@ -430,5 +428,125 @@ form input{
     }
     .date{
         top: 90px;
+    }
+}
+
+
+/* small */
+@media (max-width: 600px)   {
+    .header{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+  }
+    .nav{
+       
+       margin-right: 50px;
+       width: 100%;
+       display: flex;
+       justify-content: space-evenly;
+    }
+    .wrapper{
+        width: 400px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image{
+     
+        position: relative;
+        top: 10px;
+        margin-left: 80px;
+        width: 400px;
+
+    }
+    .image img{
+        width: 400px;
+        height: 300px;
+
+    }
+    .note{
+        width:400px;
+        height: 400px;
+        position: relative;
+        right: 200px;
+        top: 0px;
+        
+    }
+    .note h1{
+        font-size: 22px;
+
+    }
+
+    .note p{
+        font-size: 15px;
+        text-align: center;
+        line-height: 2;
+    }
+
+    .btn-sign-in button{
+        position: relative;
+        top: 50px;
+        right: 30px;
+    }
+
+    .wrapper-form {
+       height: 500px;
+       justify-content: left;
+       margin-left: 5px;
+    }
+    .wrapper-form{
+        width: 400px;
+    }
+
+    .details-container{
+        display: flex;
+        flex-direction: column;
+    }
+   
+}
+
+@media (max-width:1200px){
+    .wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .image{
+        left: 10px;
+    }
+    .note{
+        left: 10px;
+       bottom: 20   px;
+    }
+  .wrapper-form{
+
+    width: 600px;
+    justify-content: center;
+
+  }
+}
+
+
+@media(min-width:1200px) and (max-width:1280px){
+    .wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header a{
+        font-size: 15px;
+    }
+    .image{
+        position: relative;
+        left: 50px;
+    }
+
+    .note{
+        left: 20px;
     }
 }

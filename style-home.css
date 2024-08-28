@@ -205,6 +205,8 @@ form input{
     margin: 0;
     line-height: 3;
     text-align: center;
+    transition: .3s;
+    transition-property: background-color;
 }
 .sidebar a:hover{
     color: white;
@@ -265,13 +267,18 @@ form input{
     align-items: center;
     margin-left: 620px;
 }
+
 .searchbar h1{
     text-decoration: underline rgb(15, 167, 129) ;
     padding: 20px;
 }
-.searchbar i{
+.searchbar i,p{
     cursor: pointer;
     margin-right: 10px;
+  
+}
+.searchbar p:hover{
+    color: rgb(9, 114, 114);
 }
 .searchbar input{
     width: 250px;
@@ -283,7 +290,9 @@ form input{
     margin-right: 20px;
     font-size: 13px;
 }
-
+.searchbar input:focus{
+    outline-color: rgb(17, 116, 83);
+}
 .details-container{
     width: 1120px;
     height: 680px;
@@ -302,6 +311,7 @@ form input{
 }
 .box:hover{
     transform: scale(.9);
+    cursor: pointer;
 }
 .title{
     display: flex;
@@ -372,7 +382,9 @@ form input{
     }
 
     /* admin css media */
-
+    body{
+        overflow: hidden;
+    }
     .sidebar{
         width: 300px;
         font-size: 1.2rem;
@@ -380,8 +392,9 @@ form input{
     .sidebar h1{
         margin-top: 2%;
     }
+    
     .wrapper-admin{
-        margin-left: 300px;
+        margin-left: 320px;
         width: 1500px;
     }
     .profile{
@@ -431,14 +444,16 @@ form input{
     }
 }
 
-
 /* small */
-@media (max-width: 600px)   {
+@media (max-width: 600px) {
     .header{
         width: 100%;
         text-align: center;
         display: flex;
         flex-direction: column;
+  }
+  body{
+    overflow: scroll;
   }
     .nav{
        
@@ -477,7 +492,6 @@ form input{
     }
     .note h1{
         font-size: 22px;
-
     }
 
     .note p{
@@ -505,15 +519,85 @@ form input{
         display: flex;
         flex-direction: column;
     }
-   
+
+    .sidebar{
+        position: fixed;
+        overflow: hidden;
+        left:0px;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        z-index: 1;
+        justify-content: space-evenly;
+        
+    }
+  .sidebar a{
+    
+    margin-left: 40px;
+  }
+    .sidebar h1{
+        position: relative;
+        left: 20px;
+    }
+    .sidebar span{
+        color: wheat;
+    }
+    .wrapper-admin{
+        position: relative;
+        width: 550px;
+        right: 200px;
+        top: 70px;
+        
+    }
+    .details-container{
+        width: 530px;
+        display: flex;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    .searchbar{
+        position: relative;
+        right: 500px;
+    }
+    .notes{
+        width: 500px;
+        text-align: center  ;
+        position: relative;
+        left: 20px;
+    }
+    .notes h1{
+        font-size: 1rem;
+        height: 50px;
+    }
+    .searchbar input{
+        width: 280px;
+        margin-right: 0;
+    }
+    .searchbar p{
+        font-size: 15px;
+    }
+    .box{
+        width: 450px;
+        margin-bottom: 20px;
+        line-height: 1.5;
+        padding:30px;
+    }
+    .date{
+        position: relative;
+        top: 10px;
+    }
 }
 
-@media (max-width:1200px){
+@media( min-width:600px) and (max-width:1000px){
     .wrapper{
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    body{
+        overflow:scroll;
     }
     .image{
         left: 10px;
@@ -526,7 +610,53 @@ form input{
 
     width: 600px;
     justify-content: center;
-
+  }
+  .wrapper-admin{
+    width: 700px;   
+    overflow-x: hidden; 
+  }
+  .notes h1{
+    font-size: 15px;
+  }
+  .sidebar{
+    width: 200px;
+    font-size:13px;
+    z-index:1;
+  }
+  .sidebar a{
+    margin-bottom: 20px;
+  }
+  .details-container{
+    display: flex;
+    flex-direction: column;
+   gap: 20px;
+   position: relative;
+    font-size: 15px;
+  }
+  .box{
+    width: 600px;
+    padding: 30px;
+    padding-bottom: 50px;
+     border-radius: 20px;
+  }
+  .searchbar{
+    position: relative;
+    right: 300px;
+  }
+  .profile{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    top: 180px;
+  }
+  .profile h4,p{
+    font-size:11px;
+    position: relative;
+    top: 10px;
+    right: 10px;
+  }
+  .profile i{
+    font-size: 40px;
   }
 }
 

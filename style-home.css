@@ -221,7 +221,7 @@ form input{
 }
 .profile{
     position: relative;
-    top: 48%;
+    top: 42%;
     left: 10px;
 }
 .profile i{
@@ -244,10 +244,11 @@ form input{
 }
 
 .wrapper-admin{
+
     width: 1150px;
     color: black;
     margin: 0 auto;
-    margin-left: 200px;
+    margin-left: 190px;
     height: 100vh;
     padding: 20px;
 }
@@ -265,7 +266,7 @@ form input{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 620px;
+    margin-left: 550px;
 }
 
 .searchbar h1{
@@ -299,14 +300,16 @@ form input{
     margin-top: 15px;
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    gap: 10px;
+    gap: 30px;
+    overflow-x:hidden ;
 }
 
 .box{
+    width: 250px;
     border-style: solid;
     border-width: 1px;
     border-radius: 5px;
-    padding: 10px;
+    padding: 25px;
     transition: transform .9s ease;
 }
 .box:hover{
@@ -326,7 +329,7 @@ form input{
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: 30px;
+    top: 10px;
 }
 
 .date i{
@@ -380,14 +383,11 @@ form input{
         position: relative;
         top: 10px;
     }
-
+    
     /* admin css media */
-    body{
-        overflow: hidden;
-    }
     .sidebar{
         width: 300px;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     .sidebar h1{
         margin-top: 2%;
@@ -398,7 +398,7 @@ form input{
         width: 1500px;
     }
     .profile{
-        top: 600px;
+        top: 520px;
     }
     .profile-image i{
         font-size: 75px;
@@ -415,6 +415,10 @@ form input{
     .notes h1{
         font-size: 1.7rem;
     }
+    .searchbar{
+        position: relative;
+        right: 10px;
+    }
     .searchbar input{
         width: 320px;
         height: 20px;
@@ -427,20 +431,24 @@ form input{
     }
 
     .details-container{
-       
+        display: flex;
+        flex-wrap: wrap;
         margin-top: 25px;
         width: 1500px;
         height: 950px;
-        gap: 20px;
+        gap: 30px;
+        margin-left: 20px;
+        padding-bottom: 20px;
     }
 
     .box{
+        width: 300px;
         border-radius: 20px;
         padding: 20px;
-        font-size: 1.1em;
+        font-size: 1 rem;
     }
     .date{
-        top: 90px;
+        top: 60px;
     }
 }
 

@@ -28,11 +28,9 @@
 
 .nav a:hover{
     color: rgb(167, 13, 167);
-}
-.nav a.active{
-    color: rgb(167, 13, 167);
     text-decoration: underline;
 }
+
 .header span{
     color: rgb(14, 168, 130);
 }
@@ -61,7 +59,7 @@
     width: 450px;
     position: relative;
     right: 100px;
-    background-color: rgba(180, 180, 231, 0.308);
+    background-color: #f0f8ff;
     text-align: center;
     line-height: 2;
     padding: 20px;
@@ -244,13 +242,14 @@ form input{
 }
 
 .wrapper-admin{
-
+    
     width: 1150px;
     color: black;
     margin: 0 auto;
     margin-left: 190px;
     height: 100vh;
     padding: 20px;
+    padding-bottom: 20px;
 }
 .notes{
     display: flex;
@@ -301,7 +300,7 @@ form input{
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 30px;
-    overflow-x:hidden ;
+
 }
 
 .box{

@@ -451,7 +451,7 @@ form input{
     }
 }
 
-/* small */
+/* small
 @media (max-width: 600px) {
     .header{
         width: 100%;
@@ -686,4 +686,4 @@ form input{
     .note{
         left: 20px;
     }
-}
+} */

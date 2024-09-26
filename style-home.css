@@ -712,13 +712,17 @@ button:hover{
     
  }
 
-  .wrapper-admin{
-    width: 100%;   
-  }
+ /* admin */
+    .wrapper-admin{
+        position: relative;
+        right: 40px;
+        width: 76%;
+
+    }
 
   .sidebar{
+
     width: 150px;
-    
     font-size:13px;
     z-index: 1;
     a{
@@ -727,20 +731,22 @@ button:hover{
   }
 
   .details-container{
-     width: 95%;
-    position: relative;
-    top: 20px;
-    display: grid;
-     grid-template-columns: repeat(1, 1fr); 
+
+        width: 100%;
+        position: relative;
+        top: 50px;
+         display: grid;
+         grid-template-columns: repeat(1, 1fr); 
   }
-  .box{
-    width: 90%;
-    padding: 30px;
-     border-radius: 20px;
-  }
+    .box{
+        width: 90%;
+        padding: 30px;
+        border-radius: 20px;
+    }
     .searchbar{
-    position: relative;
-    right: 300px;
+
+        position: relative;
+       right: 40%;
     }
   .profile{
     width: 120px;
@@ -798,7 +804,13 @@ button:hover{
 .head{  
     margin-bottom: 20px;
 }
+
+/* login */
+.wrapper-form{
+    width: 100%;
 }
+}
+
 @media(min-width:1000px) and (max-width:1199px){
     .wrapper{
 
@@ -837,6 +849,12 @@ button:hover{
         position: relative;
         right: 100px;
     }
+
+    /* login */
+    .wrapper-form{
+        width: 100%;
+  
+    }
 }
 
 
@@ -844,8 +862,7 @@ button:hover{
 @media (min-width:1500px){
     .wrapper{
         width: 1500px;
-     height: 800px;
-       
+         height: 800px;
     }
     .header{
         font-size: 1.2rem;
@@ -958,5 +975,15 @@ button:hover{
     }
     .date{
         top: 60px;
+    }
+
+    /* register */
+    .container{
+        width: 80%;
+    }
+
+    /* login */
+    .login-form{
+        top: 0;
     }
 }

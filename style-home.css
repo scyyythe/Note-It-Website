@@ -471,7 +471,7 @@ button:hover{
     width: 100%;
     height: 680px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr)); 
     gap: 30px;
 
 }
@@ -480,7 +480,7 @@ button:hover{
     width: 85%;
     border-style: solid;
     border-width: 1px;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 25px;
     transition: transform .9s ease;
 }
@@ -497,11 +497,12 @@ button:hover{
     font-size:20px;
 }
 .date{
-
+    
     display: flex;
     justify-content: space-between;
     position: relative;
     top: 10px;
+
 }
 
 .date i{
@@ -618,9 +619,9 @@ button:hover{
         display: flex;
         flex-direction: column;
   }
-  body{
-    overflow: scroll;
-  }
+    body{
+        overflow: scroll;
+    }
     .nav{
        
        margin-right: 50px;
@@ -692,6 +693,7 @@ button:hover{
         width: 550px;
         display: flex;
         flex-direction: column;
+
         img{
             position: relative;
             top: 20%;
@@ -731,21 +733,17 @@ button:hover{
   }
 
   .details-container{
-
-        width: 100%;
-        position: relative;
-        top: 50px;
-         display: grid;
-         grid-template-columns: repeat(1, 1fr); 
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px,1fr)); 
   }
     .box{
-        width: 90%;
+        width: 80%;
         padding: 30px;
         border-radius: 20px;
     }
     .searchbar{
 
-        position: relative;
+    position: relative;
        right: 40%;
     }
   .profile{
@@ -809,52 +807,6 @@ button:hover{
 .wrapper-form{
     width: 100%;
 }
-}
-
-@media(min-width:1000px) and (max-width:1199px){
-    .wrapper{
-
-        width: 1000px;
-        img{
-            position: relative;
-            right: 50px;
-            width: 450px;
-            height: 400px;
-        }
-    }
-    .note{
-        width:350px;
-        height: 75%;
-        position: relative;
-        left: 0%;
-    }
-
-    .wrapper-admin{
-
-        width: 80%;
-    }
-    .notes h1{
-        font-size: 20px;
-    }
-    .details-container{
-        width: 90%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); 
-    }
-    .box{
-        width: 90%;
-    }
-    .searchbar{
-
-        position: relative;
-        right: 100px;
-    }
-
-    /* login */
-    .wrapper-form{
-        width: 100%;
-  
-    }
 }
 
 
